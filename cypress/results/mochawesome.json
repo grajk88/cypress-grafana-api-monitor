@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-12T14:32:11.749Z",
+    "end": "2020-06-12T14:32:14.328Z",
+    "duration": 2579,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "971361a5-4da7-4248-8578-4fe553977887",
+      "title": "",
+      "fullFile": "cypress/integration/api_tests/gorest.api.spec.js",
+      "file": "cypress/integration/api_tests/gorest.api.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eefb2fb8-c248-4258-bd02-5dd2910b26f9",
+          "title": "Go Rest API Tests - https://gorest.co.in/",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Users Service",
+              "fullTitle": "Go Rest API Tests - https://gorest.co.in/ Users Service",
+              "timedOut": null,
+              "duration": 1562,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request(\"https://gorest.co.in/public-api/users\").as(\"users\");\ncy.get('@users').its('status').should('equal', 200);",
+              "err": {},
+              "uuid": "e6ac0d83-2f60-4b90-8f3f-c7642d145909",
+              "parentUUID": "eefb2fb8-c248-4258-bd02-5dd2910b26f9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Posts Service",
+              "fullTitle": "Go Rest API Tests - https://gorest.co.in/ Posts Service",
+              "timedOut": null,
+              "duration": 357,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request(\"https://gorest.co.in/public-api/posts\").as(\"posts\");\ncy.get('@posts').its('status').should('equal', 200);",
+              "err": {},
+              "uuid": "58a69993-d8a5-4be8-a925-858ec05b41af",
+              "parentUUID": "eefb2fb8-c248-4258-bd02-5dd2910b26f9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Comments Service",
+              "fullTitle": "Go Rest API Tests - https://gorest.co.in/ Comments Service",
+              "timedOut": null,
+              "duration": 306,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request(\"https://gorest.co.in/public-api/comments\").as(\"comments\");\ncy.get('@comments').its('status').should('equal', 200);",
+              "err": {},
+              "uuid": "a76f28d2-3867-471c-a3cc-c1ba1bab3b24",
+              "parentUUID": "eefb2fb8-c248-4258-bd02-5dd2910b26f9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Albums Service",
+              "fullTitle": "Go Rest API Tests - https://gorest.co.in/ Albums Service",
+              "timedOut": null,
+              "duration": 306,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request(\"https://gorest.co.in/public-api/albums\").as(\"albums\");\ncy.get('@albums').its('status').should('equal', 200);",
+              "err": {},
+              "uuid": "c69d5a0a-33fe-49da-bdf8-c50434d416f6",
+              "parentUUID": "eefb2fb8-c248-4258-bd02-5dd2910b26f9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e6ac0d83-2f60-4b90-8f3f-c7642d145909",
+            "58a69993-d8a5-4be8-a925-858ec05b41af",
+            "a76f28d2-3867-471c-a3cc-c1ba1bab3b24",
+            "c69d5a0a-33fe-49da-bdf8-c50434d416f6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2531,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
